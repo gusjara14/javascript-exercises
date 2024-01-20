@@ -1,8 +1,14 @@
 const reverseString = function(string) {
     let stringArray = string.split("");
     let arrayLength = stringArray.length;
+    let reversedString = [];
 
-    //next I need to push the array to another array in reverse order then join together and return
+    for(let arrayIndex = arrayLength - 1;arrayIndex>=0;arrayIndex--) {
+        reversedString.push(stringArray[arrayIndex]);
+    }
+
+    reversedString = reversedString.join("");
+    return reversedString;
 };
 
 // Do not edit below this line
